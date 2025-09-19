@@ -8,6 +8,11 @@ const validateUpload = (req, res, next) => {
   if (!req.file) {
     return res.status(400).json({ error: 'No file uploaded' });
   }
+
+  if (!ALLOWED_MIME_TYPES.includes(req.file.mimetype)) {
+    return res.status(400).json({ error: 'Only PDF, TXT, and DOCX files are allowed' });
+  }
+
   next();
 };
 
