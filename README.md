@@ -59,7 +59,7 @@ A full-stack application for document analysis using RAG (Retrieval-Augmented Ge
    GEMINI_API_KEY=your_gemini_api_key
 
    # Frontend URL (for CORS)
-   FRONTEND_URL=http://localhost:8080
+   FRONTEND_URL=http://localhost:5173
    ```
 
 5. Test your Gemini API configuration:
