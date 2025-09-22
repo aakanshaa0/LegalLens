@@ -1,4 +1,4 @@
-# Legal Lens AI - Document Analysis System
+# LegalLens - Document Analysis System
 
 A full-stack application for document analysis using RAG (Retrieval-Augmented Generation) with LangChain and Google's Gemini AI.
 
