@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-gemini": "node test-gemini.js",
+    "check-env": "node check-env.js"
   },
   "keywords": [],
   "author": "",
@@ -14,10 +16,17 @@
   "type": "commonjs",
   "dependencies": {
     "@clerk/express": "^1.7.31",
+    "@google/generative-ai": "^0.1.2",
+    "@langchain/google-genai": "^0.2.18",
+    "axios": "^1.12.2",
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
-    "multer": "^2.0.2"
+    "langchain": "^0.3.34",
+    "mammoth": "^1.6.0",
+    "mime-types": "^2.1.35",
+    "multer": "^2.0.2",
+    "pdf-parse": "^1.1.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
